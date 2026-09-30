@@ -31,7 +31,7 @@ var mcInterfaceForge1165 = project(":mcinterfaceforge1165")
 var mcInterfaceForge1182 = project(":mcinterfaceforge1182")
 var mcInterfaceForge1192 = project(":mcinterfaceforge1192")
 var mcInterfaceForge1201 = project(":mcinterfaceforge1201")
-
+var mcinterfaceforge1194 = project (":mcinterfaceforge1194")
 tasks.register("buildCore") {
     dependsOn(mcCore.tasks.build)
     doLast {
