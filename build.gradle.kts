@@ -26,12 +26,11 @@ var modVersion: String = project.property("global_version").toString()
 //var modVersion: String = providers.gradleProperty("global_version")
 
 var mcCore = project(":mccore")
-var mcInterfaceForge1122 = project(":mcinterfaceforge1122")
 var mcInterfaceForge1165 = project(":mcinterfaceforge1165")
 var mcInterfaceForge1182 = project(":mcinterfaceforge1182")
 var mcInterfaceForge1192 = project(":mcinterfaceforge1192")
 var mcInterfaceForge1201 = project(":mcinterfaceforge1201")
-var mcinterfaceforge1194 = project (":mcinterfaceforge1194")
+var mcInterfaceforge1194 = project(":mcinterfaceforge1194")
 tasks.register("buildCore") {
     dependsOn(mcCore.tasks.build)
     doLast {
@@ -39,12 +38,12 @@ tasks.register("buildCore") {
     }
 }
 
-tasks.register("buildForge1122") {
+tasks.register("buildForge1194") {
     doFirst { preBuild() }
     doLast {
-        moveToOut(mcInterfaceForge1122, "1.12.2")
+        moveToOut(mcInterfaceForge1194, "1.19.4")
     }
-    dependsOn(mcInterfaceForge1122.tasks.build)
+    dependsOn(mcInterfaceforge1194.tasks.build)
 }
 
 tasks.register("buildForge1165") {
@@ -97,7 +96,7 @@ tasks.register<Exec>("buildForge1211") {
 }
 
 tasks.register("buildForgeAll") {
-    dependsOn(tasks.getByName("buildForge1122"))
+    dependsOn(tasks.getByName("buildForge1194"))
     dependsOn(tasks.getByName("buildForge1165"))
 		dependsOn(tasks.getByName("buildForge1182"))
 		dependsOn(tasks.getByName("buildForge1192"))
