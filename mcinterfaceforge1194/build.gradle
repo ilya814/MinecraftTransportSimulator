@@ -83,7 +83,7 @@ configurations {
 //Specify dependencies.
 dependencies {
     //Minecraft to use.
-    minecraft "net.minecraftforge:forge:1.19.4 - 45.4.5"
+    minecraft "net.minecraftforge:forge:1.19.4-45.4.5"
     //Make mixin annotations actually do something
     annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
 
