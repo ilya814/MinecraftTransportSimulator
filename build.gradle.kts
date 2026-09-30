@@ -30,7 +30,7 @@ var mcInterfaceForge1165 = project(":mcinterfaceforge1165")
 var mcInterfaceForge1182 = project(":mcinterfaceforge1182")
 var mcInterfaceForge1192 = project(":mcinterfaceforge1192")
 var mcInterfaceForge1201 = project(":mcinterfaceforge1201")
-var mcInterfaceforge1194 = project(":mcinterfaceforge1194")
+var mcInterfaceForge1194 = project(":mcinterfaceforge1194")
 tasks.register("buildCore") {
     dependsOn(mcCore.tasks.build)
     doLast {
@@ -43,7 +43,7 @@ tasks.register("buildForge1194") {
     doLast {
         moveToOut(mcInterfaceForge1194, "1.19.4")
     }
-    dependsOn(mcInterfaceforge1194.tasks.build)
+    dependsOn(mcInterfaceForge1194.tasks.build)
 }
 
 tasks.register("buildForge1165") {

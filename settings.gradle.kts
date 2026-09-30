@@ -8,7 +8,7 @@ include(
     "mcinterfaceforge1165",
     "mcinterfaceforge1182",
     "mcinterfaceforge1192",
-    "mcinterfaceforge1194"
+    "mcinterfaceforge1194",
     "mcinterfaceforge1201",
     "mcinterfaceneoforge1211"
 )
