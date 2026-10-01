@@ -52,7 +52,7 @@ tasks.register<Exec>("buildForge1194") {
 
 tasks.register("buildForgeAll") {
     dependsOn(tasks.getByName("buildForge1194"))
-}.
+}
 
 @OptIn(ExperimentalPathApi::class)
 fun moveToOut(subProject: Project, versionStr: String) {
